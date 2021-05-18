@@ -385,6 +385,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+.rating {
+    font-weight: bold;
+    padding: 5px;
+    color: rgb(173, 125, 1);
+}
 
 .slit-in-vertical {
   -webkit-animation: slit-in-vertical 0.45s ease-out both;
