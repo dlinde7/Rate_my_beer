@@ -1,6 +1,10 @@
 @import "compass/css3";
 @import "./images.css";
 .pageContainer {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
 }
 .headerContainer {
   width: 100%;
@@ -17,13 +21,14 @@ h1 {
   border-radius: 10px;
   padding: 5px;
   color: goldenrod;
+  box-shadow: 2px 2px 4px #000000;
 }
 
 html,
 body {
-  overflow: hidden;
   margin: 0;
   font-size: 100%;
+  overflow: hidden;
 }
 
 .navTitle {
@@ -103,8 +108,8 @@ body {
   .text-focus-in {
     display: none;
   }
-  .topnav{
-      flex-direction: column;
+  .topnav {
+    flex-direction: column;
   }
 }
 
@@ -240,6 +245,8 @@ body {
     sideWays 2s ease-in-out infinite alternate;
   -o-animation: moveclouds 15s linear infinite,
     sideWays 2s ease-in-out infinite alternate;
+  animation: moveclouds 15s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
 }
 .x10 {
   left: 90vw;
@@ -252,6 +259,8 @@ body {
   -moz-animation: moveclouds 10s linear infinite,
     sideWays 1s ease-in-out infinite alternate;
   -o-animation: moveclouds 10s linear infinite,
+    sideWays 1s ease-in-out infinite alternate;
+  animation: moveclouds 10s linear infinite,
     sideWays 1s ease-in-out infinite alternate;
 }
 @keyframes moveclouds {
@@ -364,17 +373,35 @@ body {
   padding: 10px;
   padding-bottom: 40px;
   width: 200px;
+  box-shadow: 2px 2px 4px #000000;
 }
 #pageContent {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(218, 165, 32, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(78, 78, 78);
+  border-radius: 20px;
 }
 .content {
   width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .name {
   font-weight: bolder;
@@ -386,9 +413,9 @@ body {
   justify-content: center;
 }
 .rating {
-    font-weight: bold;
-    padding: 5px;
-    color: rgb(173, 125, 1);
+  font-weight: bold;
+  padding: 5px;
+  color: rgb(173, 125, 1);
 }
 
 .slit-in-vertical {
