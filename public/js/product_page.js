@@ -93,7 +93,6 @@ function createElementsWithInnerHTML(products, message) {
   const productPlaceholder = document.getElementById("pageContent");
   const header = document.getElementById("headerText");
 
-  console.log(products);
   const rows = products.map((product) => {
     return `<section class="card slit-in-vertical">
                 <section class="content">
