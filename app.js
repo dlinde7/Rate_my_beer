@@ -27,7 +27,7 @@ app.get('/product_review', function (req, res) {
   res.render('review_page.html');
 });
 
-app.get('/getreviews', function (req, res) {
+app.get('/getbeers', function (req, res) {
   let results = new Object();
   con.connection.query('SELECT * FROM Beer', function (err, result, fields) {
     if (err) {
