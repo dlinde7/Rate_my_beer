@@ -59,7 +59,7 @@
   border-radius: 10px;
   padding: 10px;
   padding-bottom: 40px;
-  height: 20vh;
+  height: 170px;
   overflow-y: auto;
   width: 200px;
   box-shadow: inset 2px 2px 4px #000000;
@@ -97,13 +97,19 @@
   align-items: center;
   justify-content: flex-start;
 }
+.contentrev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
 .name {
   font-weight: bolder;
   margin-bottom: 5px;
 }
 .description {
   position: absolute;
-  margin-top: 5vw;
+  margin-top: 65px;
   width: 185px;
   display: block;
   overflow: hidden;
@@ -114,7 +120,7 @@
 }
 .rating {
   position: absolute;
-  margin-top: 3vw;
+  margin-top: 35px;
   font-weight: bold;
   padding: 5px;
   color: rgb(173, 125, 1);
