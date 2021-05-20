@@ -58,7 +58,7 @@ app.get('/getproduct', function (req, res) {
 
 app.get('/get_product_reviews', function (req, res) {
   var id = req.query.productId;
-  var queryString = 'SELECT * FROM ratemybeer.Reviews WHERE idBeer=' + id + ';';
+  var queryString = 'SELECT * FROM ratemybeer.Review_view WHERE idBeer=' + id + ';';
   con.connection.query(queryString, function (err, result, fields) {
     if (err) {
       throw err;

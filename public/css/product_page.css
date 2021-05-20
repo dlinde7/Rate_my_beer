@@ -62,8 +62,13 @@
   height: 20vh;
   overflow-y: auto;
   width: 200px;
+  box-shadow: inset 2px 2px 4px #000000;
+}
+
+.card:hover {
   box-shadow: 2px 2px 4px #000000;
 }
+
 #pageContent {
   display: flex;
   flex-wrap: wrap;
@@ -97,11 +102,19 @@
   margin-bottom: 5px;
 }
 .description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  margin-top: 5vw;
+  width: 185px;
+  display: block;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 6;
 }
 .rating {
+  position: absolute;
+  margin-top: 3vw;
   font-weight: bold;
   padding: 5px;
   color: rgb(173, 125, 1);
