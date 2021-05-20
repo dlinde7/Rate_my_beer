@@ -49,6 +49,9 @@ app.get('/getproduct', function (req, res) {
       throw err;
     } else {
       console.log(result);
+      result = result[0];
+      result = JSON.stringify(result);
+      res.end(result);
     }
   });
 });
