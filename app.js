@@ -24,5 +24,5 @@ app.get('/product_review', function(req, res) {
 
 
 app.listen(3000, function(){
-    console.log('server started on port 300...')
+    console.log('server started on port 3000...')
 })
