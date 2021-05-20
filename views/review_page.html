@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="..\public\css\review_page.css" />
+    <script src="..\public\js\review_page.js" async defer></script>
+    <title>Rate My Beer - Home</title>
+  </head>
+
+  <body onload="loadReviews()">
+    <section class="bubbleContainer">
+      <section id="bubbles">
+        <section class="bubble x1"></section>
+        <section class="bubble x2"></section>
+        <section class="bubble x3"></section>
+        <section class="bubble x4"></section>
+        <section class="bubble x5"></section>
+        <section class="bubble x6"></section>
+        <section class="bubble x7"></section>
+        <section class="bubble x8"></section>
+        <section class="bubble x9"></section>
+        <section class="bubble x10"></section>
+      </section>
+    </section>
+    <section class="pageContainer">
+      <section class="backContainer" onclick="onBackClicked()"></section>
+
+      <section class="review">
+        <h1 id="ReviewheaderText">
+          Create a review:
+        </h1>
+        <form class="reviewForm">
+          <section class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </section>
+          <textarea id="userReview" name="userReview" rows="10" cols="50" maxlength="500"></textarea>
+          <button
+            id="submitButton"
+            class="submitButton"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+
+      <section class="headerContainer">
+        <h1 class="roundedBackground" id="ReviewheaderText">Other reviews</h1>
+      </section>
+      <section id="reviewPlaceHolder"></section>
+    </section>
+  </body>
+</html>
