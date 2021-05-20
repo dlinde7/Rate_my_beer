@@ -31,13 +31,23 @@ function createReviewsWithInnerHTML(reviews) {
   const reviewPlaceholder = document.getElementById("reviewPlaceHolder");
   console.log(reviews);
   const rows = reviews.map((review) => {
-    return `<section class="card slit-in-vertical">
-                  <section class="content">
-                      <section class="name">${review.Username}</section>
-                      <section class="rating"> Rating: ${review.Rating}</section>
-                      <section class="description">${review.Review}</section>
-                  </section>
-             </section>`;
+    if (review.Username) {
+      return `<section class="card slit-in-vertical">
+                    <section class="contentrev">
+                        <section class="name">${review.Username}</section>
+                        <section class="rating"> Rating: ${review.Rating}</section>
+                        <section class="description">${review.Review}</section>
+                    </section>
+              </section>`;
+    } else {
+      return `<section class="card slit-in-vertical">
+                    <section class="contentrev">
+                        <section class="name">Anonymous</section>
+                        <section class="rating"> Rating: ${review.Rating}</section>
+                        <section class="description">${review.Review}</section>
+                    </section>
+              </section>`;
+    }
   });
 
   const html = `${rows.join(" ")}`;
