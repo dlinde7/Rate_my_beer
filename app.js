@@ -69,7 +69,7 @@ app.get('/get_product_reviews', function (req, res) {
     }
   });
 });
-
+app.post('/add_review', function (req, res) {});
 app.listen(3000, function () {
   console.log('server started on port 3000...');
 });
