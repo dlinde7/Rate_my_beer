@@ -1,10 +1,5 @@
 @import "./images.css";
-html,
-body {
-  margin: 0;
-  font-size: 100%;
-  overflow: hidden;
-}
+
 .pageContainer {
   display: flex;
   flex-direction: column;
