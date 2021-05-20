@@ -59,6 +59,8 @@
   border-radius: 10px;
   padding: 10px;
   padding-bottom: 40px;
+  height: 20vh;
+  overflow-y: auto;
   width: 200px;
   box-shadow: 2px 2px 4px #000000;
 }
