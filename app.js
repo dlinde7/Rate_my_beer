@@ -56,6 +56,20 @@ app.get('/getproduct', function (req, res) {
   });
 });
 
+app.get('/get_product_reviews', function (req, res) {
+  var id = req.query.productId;
+  var queryString = 'SELECT * FROM ratemybeer.Reviews WHERE idBeer=' + id + ';';
+  con.connection.query(queryString, function (err, result, fields) {
+    if (err) {
+      throw err;
+    } else {
+      console.log(result);
+      result = JSON.stringify(result);
+      res.end(result);
+    }
+  });
+});
+
 app.listen(3000, function () {
   console.log('server started on port 3000...');
 });
