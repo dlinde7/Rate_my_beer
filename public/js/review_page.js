@@ -35,6 +35,11 @@ function loadReviews() {
   createReviewsWithInnerHTML(reviews);
 }
 
+function onBackClicked(){
+    window.history.go(-1); 
+    return false;
+}
+
 function createReviewsWithInnerHTML(reviews) {
   const reviewPlaceholder = document.getElementById("reviewPlaceHolder");
   console.log(reviews);
