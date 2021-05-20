@@ -47,7 +47,7 @@ function createReviewsWithInnerHTML(reviews) {
     return `<section class="card slit-in-vertical">
                   <section class="content">
                       <section class="name">${review.username}</section>
-                      <section class="rating"> Rating: ${review.rating}</section
+                      <section class="rating"> Rating: ${review.rating}</section>
                       <section class="description">${review.review}</section>
                   </section>
              </section>`;

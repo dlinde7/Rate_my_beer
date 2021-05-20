@@ -300,7 +300,7 @@ body {
       top: 90vh;
     }
     100% {
-      top: 0vh;
+      top: -10vh;
     }
   }
   
