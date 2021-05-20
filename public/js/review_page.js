@@ -57,3 +57,6 @@ function createReviewsWithInnerHTML(reviews) {
 
   reviewPlaceholder.innerHTML = html;
 }
+
+// SELECT avg(Rating) FROM ratemybeer.Reviews where idBeer = {id.idbeer};
+// SELECT * FROM ratemybeer.Reviews where idBeer = {id.idbeer};

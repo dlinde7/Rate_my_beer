@@ -106,3 +106,6 @@ function createElementsWithInnerHTML(products, message) {
   productPlaceholder.innerHTML = html;
   header.innerText = message;
 }
+
+//SELECT * FROM ratemybeer.Beer where idCompany = {id.idCompany};
+//SELECT * FROM ratemybeer.Beer where Rating => {value};
