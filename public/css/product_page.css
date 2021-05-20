@@ -52,6 +52,17 @@ body {
   align-items: center;
 }
 
+.float{
+  background-image: var(--foam);
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: sticky;
+  top: 50;
+  width: 100%;
+}
+
 .topnav a {
   display: block;
   color: #646464;
