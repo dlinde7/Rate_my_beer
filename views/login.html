@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="..\public\css\product_page.css" />
+        <link rel="stylesheet" href="..\public\css\login.css" />
+        <script src="..\public\js\login.js" async defer></script>
+        <title>Rate My Beer - Home</title>
+    </head>
+
+    <body>
+        <section class="bubbleContainer">
+            <section id="bubbles">
+              <section class="bubble x1"></section>
+              <section class="bubble x2"></section>
+              <section class="bubble x3"></section>
+              <section class="bubble x4"></section>
+              <section class="bubble x5"></section>
+              <section class="bubble x6"></section>
+              <section class="bubble x7"></section>
+              <section class="bubble x8"></section>
+              <section class="bubble x9"></section>
+              <section class="bubble x10"></section>
+            </section>
+        </section>
+        <section class="pageContainer">
+            <nav class="topnav responsive slide-in-top">
+            <section class="navTitle">
+                <section class="navImage"></section>
+                <section class="navText">Rate My Beer</section>
+            </section>
+            <button
+                id="registerButton"
+                class="registerButton"
+                type="button"
+                onclick="onClick()"
+            >
+                Register
+            </button>
+            </nav>
+        </section>
+        <section class="login-form">
+            <h1>Login Form</h1>
+            <form action="auth" method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit">
+            </form>
+            <blockquote class="beerquote">“Beer is good. Beers are better.” - unknown</blockquote>
+        </section>
+    </body>
+</html>
