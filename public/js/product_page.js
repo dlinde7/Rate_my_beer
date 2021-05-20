@@ -1,5 +1,5 @@
 function loadBeers() {
-  fetch("/getreviews")
+  fetch("/getbeers")
     .then((response) => response.json())
     .then((data) => createElementsWithInnerHTML(data, "Featured Beer"));
 }
@@ -26,6 +26,7 @@ loadBeers();
 function onCardClicked(card) {
   var id = card.getAttribute("data-id");
   console.log(id);
+  window.location.href = "../product_review";
 }
 //SELECT * FROM ratemybeer.Beer where idCompany = {id.idCompany};
 //SELECT * FROM ratemybeer.Beer where Rating => {value};
