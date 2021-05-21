@@ -36,7 +36,7 @@ function createReviewsWithInnerHTML(reviews) {
                     <section class="contentrev">
                         <section class="name">${review.Username}</section>
                         <section class="rating"> Rating: ${review.Rating}</section>
-                        <section class="description">${review.Review}</section>
+                        <section class="description"><p>${review.Review}</p></section>
                     </section>
               </section>`;
     } else {
@@ -44,7 +44,7 @@ function createReviewsWithInnerHTML(reviews) {
                     <section class="contentrev">
                         <section class="name">Anonymous</section>
                         <section class="rating"> Rating: ${review.Rating}</section>
-                        <section class="description">${review.Review}</section>
+                        <section class="description"><p>${review.Review}</p></section>
                     </section>
               </section>`;
     }
