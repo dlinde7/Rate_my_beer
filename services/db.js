@@ -1,11 +1,11 @@
 var mySql = require('mysql');
 
 var connection = mySql.createConnection({
-    host: '35.204.174.136',
+    host: '{database.host}',
     port: '',
-    user: 'User',
-    password: 'ratebeer1234',
-    database: 'ratemybeer'
+    user: '{database.user}',
+    password: '{database.password}',
+    database: '{database.name}'
 });
 
 connection.connect(function(err) {
