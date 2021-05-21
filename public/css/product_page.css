@@ -118,6 +118,9 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 6;
 }
+.description p {
+  margin: 0;
+}
 .rating {
   position: absolute;
   margin-top: 35px;

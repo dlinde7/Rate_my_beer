@@ -62,6 +62,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.description p {
+  margin: 0;
+}
 .rating {
   font-weight: bold;
   padding: 5px;
