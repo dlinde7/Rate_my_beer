@@ -13,7 +13,7 @@ function createElementsWithInnerHTML(products, message) {
               <section class="content">
                 <section class="name">${product.Name}</section>
                 <section class="rating"> Rating: ${product.Rating}</section>
-                <section class="description">${product.Decription}</section>
+                <section class="description"><p>${product.Decription}</p></section>
               </section>
             </section>`;
   });
